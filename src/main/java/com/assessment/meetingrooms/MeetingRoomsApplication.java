@@ -11,7 +11,6 @@ import java.util.PriorityQueue;
 
 public class MeetingRoomsApplication {
     public static void main(String[] args) throws IOException {
-        System.out.println("App is running. File Path :" + args[0]);
         Path path = Paths.get(args[0]);
         List<String> meetingRecords = Files.readAllLines(path);
 
@@ -50,6 +49,6 @@ public class MeetingRoomsApplication {
             meetingRooms.offer(meeting[1]);
         }
 
-        System.out.println("Required meeting rooms count: " + requiredMeetingRoomsCount);
+        System.out.println(requiredMeetingRoomsCount);
     }
 }
