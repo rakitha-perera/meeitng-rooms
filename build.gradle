@@ -13,6 +13,16 @@ dependencies {
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.2'
 }
 
+jar {
+    manifest {
+        attributes "Main-Class": "com.assessment.meetingrooms.MeetingRoomsApplication"
+    }
+
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+
 test {
     useJUnitPlatform()
 }
