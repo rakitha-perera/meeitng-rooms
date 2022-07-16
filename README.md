@@ -2,10 +2,10 @@
 
 ## <a name="run-gradle"></a> Build and run the app via Gradle
 
-Commands: `
+Commands: 
 
-* Build the app - ./gradlew clean build`
-* Run the app   - java -jar build/libs/meeitng-rooms.jar [fila path]
+* Build the app - `./gradlew clean build`
+* Run the app   - `java -jar build/libs/meeitng-rooms.jar [fila path]`
 
 ## <a name="run-gradle"></a> Output
 
